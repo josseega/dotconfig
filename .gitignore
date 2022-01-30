@@ -1,0 +1,15 @@
+
+###### Directories ignored
+
+discord/
+ephoto/
+gtk-3.0/
+gtk-2.0/
+nitrogen/
+pulse/
+spotify/
+vlc/
+inkscape/
+volumeicon/
+yay/
+

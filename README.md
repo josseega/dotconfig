@@ -1,2 +1,2 @@
 # dotconfig
-My.config on linux
+My .config on linux
