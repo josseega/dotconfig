@@ -1,5 +1,0 @@
-2022/01/30-03:23:23.776 63bd Creating DB /home/raz/.config/discord/Local Storage/leveldb since it was missing.
-2022/01/30-03:23:23.782 63bd Reusing MANIFEST /home/raz/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2022/01/30-03:24:32.376 63be Level-0 table #5: started
-2022/01/30-03:24:32.386 63be Level-0 table #5: 164279 bytes OK
-2022/01/30-03:24:32.389 63be Delete type=0 #3
