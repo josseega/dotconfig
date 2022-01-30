@@ -4,12 +4,12 @@
 .config/discord/**
 .config/ephoto/**
 .config/gtk-3.0/**
- .config/gtk-2.0/**
- .config/nitrogen/**
- .config/pulse/**
- .config/spotify/**
- .config/vlc/**
- .config/inkscape/**
- .config/volumeicon/**
- .config/yay/**
+.config/gtk-2.0/**
+.config/nitrogen/**
+.config/pulse/**
+.config/spotify/**
+.config/vlc/**
+.config/inkscape/**
+.config/volumeicon/**
+.config/yay/**
 
