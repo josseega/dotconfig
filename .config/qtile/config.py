@@ -280,7 +280,7 @@ def init_widgets_list():
                        foreground = colors[1],
                        background = colors[5],
                        fmt = 'BATT: {}',
-                       format ='{percent:2.0%}', 
+                       format ='{percent:2.0%}',
                        padding = 5
                        ),
               widget.KeyboardLayout(
