@@ -13,3 +13,6 @@
 .config/volumeicon/**
 .config/yay/**
 
+
+!.git
+.config/nvim/autoload/**

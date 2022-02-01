@@ -23,6 +23,10 @@ set scrolloff=7
 "use y and p with the system clipboard
 set clipboard=unnamedplus
 
+setlocal spell
+set spelllang=en_gb,es_mx
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
 "==================================================================================
 "plugins
 "==================================================================================
@@ -65,8 +69,9 @@ Plug 'sindrets/diffview.nvim'
 Plug 'lervag/vimtex'
 
 
-" To see CSS colors while editing
-Plug 'ap/vim-css-color'
+" To see colors while editing
+Plug 'gko/vim-coloresque'
+
 "
 " UltiSnips
 
@@ -103,6 +108,11 @@ call plug#end()
 set encoding=UTF-8
 let mapleader = " "
 
+" Mapings for the inkscape figures
+
+inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
+nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
+
 " Tab navigation
 
 nnoremap <C-n> <cmd>tabnew<cr>
@@ -124,9 +134,11 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 " Snips Maps
 "****************************************************
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-l>"
-let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+
+"date
 
 "****************************************************
 " Vimtex Maps
@@ -136,6 +148,11 @@ let maplocalleader = ","
 
 nnoremap <leader>tt <cmd>VimtexTocToggle<cr>
 
+" Error window do not open automatically
+let g:vimtex_quickfix_mode = 0
+
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 "==============================================================================
 " plugin configs
